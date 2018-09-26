@@ -1,0 +1,125 @@
+body{
+  display: flex;
+  width: 100%;
+  height: 54vw;
+}
+
+/* Body Styles */
+
+.main-content {
+ align-items: center;
+ display: flex;
+ flex-basis: 90%;
+ justify-content: center;
+ order: 2;
+
+ background: url(mars2.jpg)
+             top center / cover
+             no-repeat;
+}
+
+/* Button Styles*/
+
+.white-btn {
+  @include white-button;
+}
+
+/* Welcome Screen */
+
+.welcome-screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em 5em;
+  text-align: center;
+
+    .white-btn {
+      flex-basis: 100%;
+      max-width: 150px;
+      align-self: center;
+      margin-bottom: 3em;
+    }
+    p {
+      flex-basis: 100%;
+      font-size: 1.3em;
+      color: #fff;
+    }
+}
+
+/* Timer */
+
+.clock {
+  align-items: center;
+  border: 2px solid #fd746c;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 75px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+    &.hidden {
+      right: -250px;
+    }
+}
+
+/* Question Box */
+
+.questions-box {
+  align-self: center;
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  padding: 2em 4em;
+  text-align: center;
+  justify-content: center;
+
+    .quiz-questions {
+      flex-basis: 100%;
+      margin-bottom: 1em;
+    }
+    .button-wrapper {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .white-btn .i-f {
+      box-shadow: 1px 2px 3px #141414;
+    }
+    h3 {
+      font-size: 2em;
+    }
+}
+
+/* Rocket Styles */
+
+.rocket-wrapper {
+  position: relative;
+
+  h2 {
+    opacity: 0;
+    transition-delay: 10s;
+    animation: fade-in 5s infinite 1s;
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .fa-rocket {
+    font-size: 12em;
+    color: #fff;
+    transform: rotate(-45deg);
+
+  }
+  .hidden {
+    animation: launch 4s linear;
+    bottom: -600px;
+    left: -90px;
+    position: absolute;
+    overflow: hidden;
+    margin-left: 0.5em;
+  }
+}

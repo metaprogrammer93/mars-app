@@ -1,0 +1,41 @@
+.sidebar {
+  display: flex;
+  flex-basis: 20%;
+  justify-content: center;
+  max-width: 150px;
+  order: 1;
+  padding-top: 100px;
+  position: relative;
+
+}
+
+.spaceship {
+  display: flex;
+  align-items: center;
+  align-self: center;
+
+  background: url(mars1.jpg)
+              top center / cover
+              no-repeat;
+  border-radius: 50%;
+  height: 110px;
+  justify-content: center;
+  width: 110px;
+}
+
+.spaceship i {
+  color: #fff;
+  position: relative;
+  right: 27px;
+  transform: translateX(23px) rotate(270deg);
+  text-shadow:  0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                0 2px 1px #D3D3D3,
+                1px 4px 8px #413839	;
+}

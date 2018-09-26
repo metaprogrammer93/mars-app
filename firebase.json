@@ -1,0 +1,9 @@
+{
+  "firebase": "return-to-earth-app",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

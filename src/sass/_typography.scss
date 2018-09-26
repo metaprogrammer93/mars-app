@@ -1,0 +1,22 @@
+html {
+  font-family: "Arial", sans-serif;
+}
+
+.sidebar h1 {
+   color: #EDF1F2;
+   font-size: 80px;
+   font-weight: bold;
+   letter-spacing: 0.1em;
+   position: absolute;
+   text-transform: uppercase;
+   transform: translateX(-82px) translateY(20px)rotate(270deg);
+}
+
+.clock {
+  font-size: 50px;
+  color: 	#4CC417;
+  font-family: 'Digital', serif;
+  text-shadow:  0 1px 1px	#6CC417;
+  transition: all 1s ease-in-out;
+  animation: glow 2s linear 1s infinite alternate;
+}

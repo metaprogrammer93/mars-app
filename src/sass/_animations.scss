@@ -1,0 +1,30 @@
+@keyframes glow {
+  0% {
+    text-shadow: rgb(76, 196, 23);
+  }
+  100% {
+    text-shadow: rgba(108, 196, 23, 0.3);
+  }
+}
+
+@keyframes launch {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 1000px;
+  }
+}
+
+@keyframes fade-in {
+  0%   {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+	100% {
+    opacity: 1;
+  }
+
+}
